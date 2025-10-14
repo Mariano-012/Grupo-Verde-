@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sistema de Asistencias - IES 11</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="centered">
+    <div class="card small">
+      <h1>Sistema de Asistencias</h1>
+      <p class="muted">Ingresa como Profesor o Alumno</p>
+
+      <div class="login-row">
+        <input id="email" type="text" placeholder="Correo o usuario">
+        <input id="password" type="password" placeholder="Contraseña">
+      </div>
+
+      <div class="actions">
+        <button class="btn" onclick="goTo('profesor')">Soy Profesor</button>
+        <button class="btn outline" onclick="goTo('alumno')">Soy Alumno</button>
+      </div>
+
+      <p class="hint">(En esta demo no hay cuentas reales. Ingresa cualquier valor)</p>
+    </div>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

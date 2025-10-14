@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panel Profesor - Asistencias</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">IES 11 • Tecnicatura Superior en Desarrollo de Software</div>
+    <div>
+      <button class="btn small" onclick="location.href='index.html'">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Crear nuevo grupo</h2>
+      <form id="formCrearGrupo">
+        <div class="grid-2">
+          <input id="profNombre" placeholder="Nombre del profesor" required>
+          <input id="profApellido" placeholder="Apellido del profesor" required>
+        </div>
+        <input id="profMateria" placeholder="Materia o nombre del grupo" required>
+        <div class="actions">
+          <button class="btn" type="submit">Crear grupo</button>
+        </div>
+        <p class="muted">Al crear el grupo serás redirigido a la página del grupo.</p>
+      </form>
+    </section>
+
+    <section class="card">
+      <h2>Mis grupos</h2>
+      <ul id="listaGrupos" class="list"></ul>
+      <p id="sinGrupos" class="muted" style="display:none">No tenés grupos creados aún.</p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

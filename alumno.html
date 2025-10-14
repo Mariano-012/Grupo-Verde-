@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panel Alumno - Asistencias</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">Buscar grupos - IES 11</div>
+    <div>
+      <button class="btn small" onclick="location.href='index.html'">Cerrar sesión</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2>Buscar grupos por materia</h2>
+      <div class="search-row">
+        <input id="buscarMateria" placeholder="Escribí el nombre de la materia...">
+        <button class="btn" onclick="buscarGrupos()">Buscar</button>
+      </div>
+
+      <h3>Resultados</h3>
+      <ul id="resultados" class="list"></ul>
+      <p id="sinResultados" class="muted" style="display:none">No se encontraron grupos.</p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

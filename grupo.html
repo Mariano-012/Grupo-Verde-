@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Grupo - Asistencias</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div id="groupHeader" class="brand">Grupo</div>
+    <div>
+      <button class="btn small" onclick="location.href='profesor.html'">Volver</button>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="card">
+      <h2 id="groupTitle">Detalle del grupo</h2>
+      <p id="groupInfo" class="muted"></p>
+
+      <h3>Lista de alumnos</h3>
+      <ul id="alumnosList" class="list"></ul>
+      <p id="sinAlumnos" class="muted" style="display:none">No hay alumnos registrados todavía.</p>
+    </section>
+  </main>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
